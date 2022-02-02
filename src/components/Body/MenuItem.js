@@ -15,7 +15,12 @@ const MenuItem = (props) => {
                         alt={name}
                     />
                     <CardImgOverlay>
-                        <CardTitle>{name}</CardTitle>
+                        <CardTitle
+                            className="card-title"
+                            onClick={() => props.onDishSelect(props.dish)}
+                        >
+                            {name}
+                        </CardTitle>
                     </CardImgOverlay>
                 </CardBody>
             </Card>

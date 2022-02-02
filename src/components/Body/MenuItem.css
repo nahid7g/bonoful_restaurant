@@ -5,3 +5,10 @@
 .card-img {
     opacity: 0.5;
 }
+.card-title {
+    cursor: pointer;
+}
+.dish-detail {
+    margin-top: 10px;
+    padding: 5px;
+}

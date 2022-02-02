@@ -9,9 +9,13 @@ class Menu extends Component {
     render() {
         return (
             <div className="container">
-                {this.state.dishes.map((dish) => (
-                    <MenuItem dish={dish} key={dish.id} />
-                ))}
+                <div className="row">
+                    <div className="col-6">
+                        {this.state.dishes.map((dish) => (
+                            <MenuItem dish={dish} key={dish.id} />
+                        ))}
+                    </div>
+                </div>
             </div>
         );
     }
